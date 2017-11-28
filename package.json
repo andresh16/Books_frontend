@@ -1,0 +1,22 @@
+{
+  "name": "libraryfront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresh16/Books_frontend.git"
+  },
+  "keywords": [
+    "books"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresh16/Books_frontend/issues"
+  },
+  "homepage": "https://github.com/andresh16/Books_frontend#readme"
+}
