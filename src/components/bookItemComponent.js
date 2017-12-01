@@ -1,7 +1,7 @@
 import FlatButton from 'material-ui/FlatButton';
 import React, {Component} from 'react';
 import Paper from 'material-ui/Paper';
-import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import {Card, CardActions, CardMedia, CardTitle} from 'material-ui/Card';
 
 const style = {
     width: 250,
@@ -11,11 +11,6 @@ const style = {
 };
 
 class BookItemComponent extends Component {
-
-    constructor(props){
-        super(props);
-    }
-
     render() {
         const {title, urlImage} = this.props;
         return (

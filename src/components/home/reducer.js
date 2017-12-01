@@ -10,9 +10,9 @@ const initialState = Immutable.Map({
 export default (state = initialState, action = {}) => {
     switch (action.type) {
         case actions.GET_LIST_ALL_BOOKS:
-            const response = get(action.payload,'data',[]);
+            const data = get(action,'payload.data',[]);
             return state.withMutations(map => {
-                map.set('books', response);
+                map.set('books', data);
             });
         default:
             return state;
