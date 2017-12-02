@@ -51,10 +51,9 @@ class TableBooks extends Component {
                         <TableHeaderColumn tooltip="Título">Título</TableHeaderColumn>
                         <TableHeaderColumn tooltip="Autor">Autor</TableHeaderColumn>
                         <TableHeaderColumn tooltip="Editorial">Editorial</TableHeaderColumn>
-                        <TableHeaderColumn tooltip="Genero">Genero</TableHeaderColumn>
+                        <TableHeaderColumn tooltip="Género">Género</TableHeaderColumn>
                         <TableHeaderColumn tooltip="Lenguaje">Lenguaje</TableHeaderColumn>
                         <TableHeaderColumn tooltip="# Páginas"># Páginas</TableHeaderColumn>
-                        <TableHeaderColumn>Editar</TableHeaderColumn>
                         <TableHeaderColumn>Eliminar</TableHeaderColumn>
                     </TableRow>
                 </TableHeader>
@@ -74,11 +73,6 @@ class TableBooks extends Component {
                             <TableRowColumn>{row.language}</TableRowColumn>
                             <TableRowColumn>{row.pages}</TableRowColumn>
                             <TableRowColumn>
-                                <IconButton>
-                                    <ActionEdit/>
-                                </IconButton>
-                            </TableRowColumn>
-                            <TableRowColumn>
                                     <ButtonDelete title={row.title} id={row._id}/>
                             </TableRowColumn>
                         </TableRow>
@@ -92,9 +86,10 @@ class TableBooks extends Component {
                         <TableHeaderColumn>Título</TableHeaderColumn>
                         <TableHeaderColumn>Autor</TableHeaderColumn>
                         <TableHeaderColumn>Editorial</TableHeaderColumn>
-                        <TableHeaderColumn>Genero</TableHeaderColumn>
+                        <TableHeaderColumn>Género</TableHeaderColumn>
                         <TableHeaderColumn>Lenguaje</TableHeaderColumn>
                         <TableHeaderColumn># Páginas</TableHeaderColumn>
+                        <TableHeaderColumn>Eliminar</TableHeaderColumn>
                     </TableRow>
                 </TableFooter>
             </Table>);

@@ -2,6 +2,7 @@ import FlatButton from 'material-ui/FlatButton';
 import React, {Component} from 'react';
 import Paper from 'material-ui/Paper';
 import {Card, CardActions, CardMedia, CardTitle} from 'material-ui/Card';
+import ViewBook from '../components/viewBook/viewBookComponent';
 
 const style = {
     width: 250,
@@ -12,7 +13,7 @@ const style = {
 
 class BookItemComponent extends Component {
     render() {
-        const {title, urlImage} = this.props;
+        const {title, urlImage, synopsis, pages, editorial, author, language, gender} = this.props;
         return (
             <Paper style={style} zDepth={2}>
                 <Card>
@@ -21,7 +22,7 @@ class BookItemComponent extends Component {
                     </CardMedia>
                     <CardTitle subtitle={title} />
                     <CardActions>
-                        <FlatButton label="Ver libro" />
+                        <ViewBook title={title} synopsis={synopsis} pages={pages} editorial={editorial}  author={author} language={language} gender={gender}/>
                     </CardActions>
                 </Card>
             </Paper>

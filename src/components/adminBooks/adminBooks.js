@@ -40,9 +40,9 @@ class AdminBooks extends Component {
                         <TableBooks/>
                     </Grid>
                 </Paper>
-                <FloatingActionButton style={styleButton}>
-                    <ContentAdd/>
-                </FloatingActionButton>
+                {/*<FloatingActionButton style={styleButton}>*/}
+                {/*<ContentAdd/>*/}
+                {/*</FloatingActionButton>*/}
             </div>
         );
     }
